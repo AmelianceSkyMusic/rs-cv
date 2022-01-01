@@ -370,7 +370,10 @@ code {
     position: absolute;
     user-select: none;
     opacity: 0;
+    z-index: -1;
 }
+
+
 /* .link {
     font-style: normal;
     font-weight: bold;
