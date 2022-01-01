@@ -76,6 +76,7 @@ body {
 }
 
 
+
 .button {
     display: inline-block;
     white-space: nowrap;
@@ -202,12 +203,13 @@ nav .link:hover {
 }
 
 .position {
+    padding-top: 16px;
     text-transform: none;
 }
 
 .position-and-salary {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .salary {
@@ -217,9 +219,9 @@ nav .link:hover {
     color: var(--color-gray);
 }
 
-#summary>p:nth-child(1) {
+/* #summary>p:nth-child(1) {
     padding-top: 0;
-}
+} */
 
 .button-telegram {
     margin-bottom: 24px;
@@ -243,6 +245,7 @@ nav .link:hover {
 .portfolios:first-child {
     padding-top: 8px;
 }
+
 /* .contact-item {
     display: inline-flex;
 
@@ -272,9 +275,9 @@ footer .container {
     align-items: center;
 }
 
-footer .container>h4 {
-padding: 0;
-}
+/* footer .container>h4 {
+    padding: 0;
+} */
 
 #github-logo {
     height: 24px;
@@ -308,11 +311,13 @@ h3 {
 h4 {
     /* padding-top: 12px; */
     font-size: 20px;
+    line-height: 150%;
 }
 
 .p1 {
     padding-top: 12px;
     font-size: 20px;
+    line-height: 150%;
 }
 
 .p2 {
@@ -332,6 +337,7 @@ ul {
 
 .link {
     display: block;
+    white-space: nowrap;
     /* white-space: nowrap; */
     /* position: relative; */
     /* padding: 12px 24px; */
@@ -351,10 +357,23 @@ link:hover {
     color: green;
 }
 
+.link-icon {
+    position: relative;
+    top: -2px;
+    /* display: inline-block; */
+    padding-left: 8px;
+    /* margin-bottom: 4px; */
+    font-size: 14px;
+    line-height: 150%;
+}
+
 code {
     font-size: 20px;
 }
 
+.first-el {
+    padding-top: 0px;
+}
 /* .link {
     font-style: normal;
     font-weight: bold;
