@@ -365,6 +365,12 @@ code {
 .first-el {
     padding-top: 0px;
 }
+
+.hide {
+    position: absolute;
+    user-select: none;
+    opacity: 0;
+}
 /* .link {
     font-style: normal;
     font-weight: bold;
