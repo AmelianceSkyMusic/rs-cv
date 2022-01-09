@@ -1,11 +1,15 @@
 
-/* 
+/*
 позиционирование
 блочная модель (размеры, отступы)
 типографика (свойства шрифта)
 оформление (цвет фона, тень)
 анимация
 */
+
+.{
+    background-color: #sdfsdf;
+}
 
 :root {
     --color-black-light: #1E1E1E;
@@ -28,7 +32,7 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +59,7 @@ body {
 /* ---------------------------------------------------------- */
 
 .container {
-    
+
     display: flex;
     justify-content: space-between;
 
@@ -146,7 +150,7 @@ nav .link {
     color: var(--color-gray);
     transition: color 0.3s;
     text-transform: uppercase;
-    
+
 }
 
 nav .link:hover {
@@ -180,6 +184,18 @@ nav .link:hover {
     align-self: center;
     margin-left: 18px;
 
+}
+
+#noise {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 30%;
+    z-index: -100;
 }
 
 .candidate-and-photo {
@@ -389,11 +405,33 @@ code {
 
 
 
+.test {
+}
+.section {
+}
+.title {
+}
+.title__image {
+}
+.image {
+}
+.title__header {
+}
+.header {
+}
+.title__text {
+}
+
+
+
+
+
+
 
 
 
 /* declaration-order {
-    
+
 
     Позиционирование
 
@@ -403,7 +441,7 @@ code {
     bottom: 0;
     left: 0;
     z-index: 100;
-  
+
 
     Блочная модель
 
@@ -413,7 +451,7 @@ code {
     height: 100px;
     margin: 10px;
     padding: 10px;
-  
+
 
     Типографика
 
@@ -424,7 +462,7 @@ code {
     font-weight: 700;
     text-align: center;
     color: #333333;
-  
+
 
     Оформление
 
@@ -432,10 +470,10 @@ code {
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     opacity: 1;
-  
+
 
     Анимация
-    
+
     transition: color 1s;
 
 
